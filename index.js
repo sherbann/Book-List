@@ -1,8 +1,8 @@
 const express = require('express')
-const res = require('express/lib/response') 
+const res = require('express/lib/response')
 const router = require('./router')
-const app = express() 
-const port = 3001 
+const app = express()
+const port = process.env.PORT || 3001
 
 app.use(express.json())
 app.use(router)
